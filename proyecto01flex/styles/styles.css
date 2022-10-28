@@ -10,7 +10,7 @@
 
 html{
   scroll-behavior: smooth;
-  scroll-padding-top: 100px;
+  scroll-padding-top: 50px;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -560,7 +560,7 @@ nav .rayas .line {
   background-color:#256D85;
   border-radius: 35%;
   width: 70%;
-  height: 3.5vw;
+  height: 2vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -598,6 +598,15 @@ nav .rayas .line {
   width: 23vw;
   background: rgb(223, 246, 255,0.3);
   position: relative;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+}
+
+#proyectos .rowone .proy1 .proy1vid .proy1circle video{
+  height: 30vw;
+  width: 45vw;
+  position: absolute;
+  right: -10vw;
+  top: -3vw;
 }
 
 
@@ -632,13 +641,22 @@ nav .rayas .line {
   width: 23vw;
   background: rgb(223, 246, 255,0.3);
   position: relative;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+}
+
+#proyectos .rowone .proy2 .proy2vid .proy2circle video{
+  height: 30vw;
+  width: 45vw;
+  position: absolute;
+  right: -2vw;
+  top: -3vw;
 }
 
 #proyectos .rowone .proy2 .proy2desc .proy2title{
   background-color:#256D85;
   border-radius: 35%;
   width: 70%;
-  height: 3.5vw;
+  height: 2vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -667,18 +685,149 @@ nav .rayas .line {
 #proyectos .rowtwo .ghub{
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   flex: 1;
 }
 
-#proyectos .rowtwo .ghub .button{
-  margin-top: 2vw;
+#proyectos .rowtwo .ghub .rowtwo1 h2{
   display: flex;
   justify-content: center;
-  align-content: center;
-  border-radius: 35%;
+  font-size: 1.5vw;
+}
+
+#proyectos .rowtwo .ghub .rowtwo2{
+  display: flex;
+  column-gap: 2vw;
+  position: relative;
+
+}
+
+
+#proyectos .rowtwo .ghub .rowtwo2 .button{
+  display: flex;
+  border-radius: 15%;
   padding: 10px;
   width: 20vw;
-  height: 5vw;
+  height: 4vw;
+  background: rgba(6, 40, 61, 0.5);
+  position: relative;
+}
+
+
+#proyectos .rowtwo .ghub .rowtwo2 .button  #link{
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2vw;
+  margin-top: 0.3vw;
+  font-size: 1.55vw;
+  text-decoration: none;
+}
+
+#proyectos .rowtwo a:hover{
+  color: #DFF6FF;
+  text-shadow: 2px 2px #256D85 ;
+}
+
+#proyectos .rowtwo .ghub .rowtwo2  #flechain{
+  width: 2vw;
+  margin-top: 1.5vw;
+}
+
+#proyectos .rowtwo .ghub .button img{
+  width: 3vw;
+  height: auto;
+  order: 1;
+  margin-right: 2vw;
+}
+
+/*Inicio CSS Mi experiencia */
+#experiencia div{
+    background: #eee;
+    border: 5px solid #ccc;
+    padding: 10px;
+}
+
+#experiencia p{
+  color: #000000;
+}
+
+
+#experiencia{
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Definir grid*/
+
+#experiencia .rowzero{
+  display: flex;
+  width: 100%;
+}
+
+#experiencia .rowone{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#experiencia .colone{
+  align-items: center;
+  display: flex;
+  width: 100%;
+  column-gap: 1vw;
+}
+
+
+#experiencia .coltwo{
+  display: flex;
+  width: 100%;
+}
+
+
+#experiencia .rowzero .logo{
+  flex: 1;
+  flex-basis: auto;
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+
+#experiencia .rowzero .logo .contenedor{
+  border-radius: 50%;
+  padding: 10px;
+  width: 8vw;
+  height: 8vw;
   background: rgb(223, 246, 255,0.3);
   position: relative;
+}
+
+#experiencia .rowzero .logo .contenedor img{
+  width: 5vw;
+  height: 5vw;
+  position: absolute;
+  left: 1.5vw;
+  top: 1.2vw;
+}
+
+#experiencia .rowzero .titulob{
+  flex: 1;
+  flex-basis: auto;
+  position: relative;
+}
+
+#experiencia .rowzero .titulob #burbujatitle{
+  z-index: 1;
+  width: 30vw;
+  opacity: 30%;
+}
+
+#experiencia .rowzero .titulob .titulo{
+  z-index: 3;
+  font-size: 3vw;
+  position: absolute;
+  top: -5%;
+  left: 8%;
 }
