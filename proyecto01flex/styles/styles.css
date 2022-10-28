@@ -459,7 +459,7 @@ nav .rayas .line {
 }
 /*Seccion de Proyectos CSS*/
 
-/*Guias*/
+/*Guias
 #proyectos div{
     background: #eee;
     border: 5px solid #ccc;
@@ -469,7 +469,7 @@ nav .rayas .line {
 #proyectos p{
   color: #000000;
 }
-
+*/
 
 #proyectos{
   padding-top: 55px;
@@ -487,6 +487,7 @@ nav .rayas .line {
 #proyectos .rowone{
   display: flex;
   width: 100%;
+  column-gap: 1vw;
 }
 
 
@@ -548,16 +549,41 @@ nav .rayas .line {
 #proyectos .rowone .proy1 .proy1desc{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  row-gap: 0.2vw;
+  row-gap: 0.5vw;
+  position: relative;
 }
 
 #proyectos .rowone .proy1 .proy1desc .proy1title{
   background-color:#256D85;
-  border-radius: 15%;
-  height: 4vw;
+  border-radius: 35%;
+  width: 70%;
+  height: 3.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-weight: 600;
 }
 
+#proyectos .rowone .proy1 .proy1desc .proy1title p{
+  position: absolute;
+}
+
+#proyectos .rowone .proy1 .proy1desc .proy1text{
+  background-color:#256D85;
+  border-radius: 15%;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+}
+
+#proyectos .rowone .proy1 .proy1desc .proy1text p{
+  font-size: 1.6vw;
+  width: 80%;
+}
 
 #proyectos .rowone .proy1 .proy1vid{
   display: flex;
@@ -569,8 +595,7 @@ nav .rayas .line {
 #proyectos .rowone .proy1 .proy1vid .proy1circle{
   border-radius: 50%;
   padding: 10px;
-  width: 15vw;
-  height: 15vw;
+  width: 23vw;
   background: rgb(223, 246, 255,0.3);
   position: relative;
 }
@@ -584,8 +609,12 @@ nav .rayas .line {
 }
 
 #proyectos .rowone .proy2 .proy2desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  order: 0;
+  row-gap: 0.5vw;
 }
 
 
@@ -600,16 +629,56 @@ nav .rayas .line {
 #proyectos .rowone .proy2 .proy2vid .proy2circle{
   border-radius: 50%;
   padding: 10px;
-  width: 15vw;
-  height: 15vw;
+  width: 23vw;
   background: rgb(223, 246, 255,0.3);
   position: relative;
 }
 
+#proyectos .rowone .proy2 .proy2desc .proy2title{
+  background-color:#256D85;
+  border-radius: 35%;
+  width: 70%;
+  height: 3.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-weight: 600;
+}
+
+#proyectos .rowone .proy2 .proy2desc .proy2title p{
+  position: absolute;
+}
+
+#proyectos .rowone .proy2 .proy2desc .proy2text{
+  background-color:#256D85;
+  border-radius: 15%;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+}
+
+#proyectos .rowone .proy2 .proy2desc .proy2text p{
+  font-size: 1.6vw;
+  width: 80%;
+}
 
 
 #proyectos .rowtwo .ghub{
   display: flex;
   justify-content: center;
   flex: 1;
+}
+
+#proyectos .rowtwo .ghub .button{
+  margin-top: 2vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 35%;
+  padding: 10px;
+  width: 20vw;
+  height: 5vw;
+  background: rgb(223, 246, 255,0.3);
+  position: relative;
 }
