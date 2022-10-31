@@ -1,0 +1,1743 @@
+*{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: white;
+}
+* , *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #inicio .rowzero h1{
+    font-size: 5vw;
+  }
+  
+  #inicio .rowone{
+    row-gap: 5vh;
+    flex-direction: column;
+  }
+
+  #inicio .rowone .logo{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #inicio .rowone .txtcircle{
+    width: 80%;
+  }
+
+  #inicio .rowone .rectangulo{
+    width: 90%;
+    margin-left: 5vw;
+    justify-content: center;
+    height: auto;
+  }
+
+  #inicio .rowone .rectangulo .rectangle{
+    flex: 1;
+    height: 12vh;
+    box-shadow: 0.1rem 0.3rem #47B5FF;
+  }
+
+  #inicio .rowone .rectangulo .rectanglesmall{
+    flex: 0;
+    height: 7vh;
+    width: 10vw;
+    box-shadow: 0.1rem 0.2rem #47B5FF;
+  }
+
+  #inicio .rowone p{
+    font-size: 3.5vw;
+  }
+
+  #inicio .rowtwo{
+    margin-top: 4vh;
+    width: 100%;
+  }
+
+  #inicio .rowtwo .imagen .waves{
+    width: 100vw;
+    height: 20vh;
+    margin-left: -2vw;
+  }
+
+  body #sobremi {
+    row-gap: 7vh;
+    padding-top: 50px;
+  }
+
+  #sobremi .rowzero{
+    flex-wrap: nowrap;
+    column-gap: 0;
+    row-gap: 0;
+  }
+  body #sobremi .rowzero .titulob #burbujatitle{
+    width: 75vw;
+
+  }
+
+  body #sobremi .rowzero .titulob .titulo{
+    font-size: 13vw;
+    margin-top: 0.5vh;
+    margin-left: -1vw;
+  }
+    
+  body #sobremi .rowzero .logo .contenedor{
+    margin-top: 0.7vh;
+      width: 16vw;
+      height: 7vh;
+  }
+
+  body #sobremi .rowzero .logo #emoteame{
+    width: 10vw;
+    height: 5vh;
+    margin-left: 1.5vw;
+
+  }
+
+  body #sobremi .bubble1 #burbuja1{
+    width: 95vw;
+    height: 15vh;
+  }
+
+  body #sobremi .bubble1 .rectangle{
+    width: 85vw;
+    margin-right: 5vw;
+  }
+
+  body #sobremi .bubble1 .rectangle p{
+    margin-top: 1vh;
+    font-size: 4.2vw;
+  }
+  
+
+  body #sobremi .bubble2 #burbuja2{
+    width: 95vw;
+    height: 15vh;
+  }
+
+
+  body #sobremi .bubble2 .rectangle{
+    width: 85vw;
+    margin-top: 1vh;
+    margin-left: 4vw;
+  }
+
+  body #sobremi .bubble2 .rectangle p{
+    margin-top: 1vh;
+    font-size: 4.2vw;
+  }
+
+
+  body #sobremi .bubble3 #burbuja3{
+    width: 95vw;
+    height: 15vh;
+  }
+
+  body #sobremi .bubble3 .rectangle{
+    width: 85vw;
+    margin-right: 5vw;
+  }
+
+  body #sobremi .bubble3 .rectangle p{
+    margin-top: 2vh;
+    font-size: 4.2vw;
+  }
+
+  body #sobremi .bubble3 .rectangle #flechain{
+    width: 5vw;
+    margin-top: 7vh;
+  }
+
+  body #proyectos{
+    row-gap: 4vh;
+    padding-top: 50px;
+  }
+  #proyectos .rowzero{
+    flex-wrap: nowrap;
+    row-gap: 0;
+  }
+  body #proyectos .rowzero .titulob #burbujatitle{
+    width: 75vw;
+
+  }
+
+  body #proyectos .rowzero .titulob .titulo{
+    font-size: 10vw;
+    margin-top: 2vh;
+    margin-left: -1vw;
+  }
+    
+  body #proyectos .rowzero .logo .contenedor{
+    margin-top: 0.7vh;
+      width: 16vw;
+      height: 7vh;
+  }
+
+  body #proyectos .rowzero .logo #emoteproy{
+    width: 10vw;
+    height: 5vh;
+    margin-left: 1.2vw;
+    margin-top: 0.5vh;
+
+  }
+
+  body #proyectos .rowone{
+    flex-direction: column;
+    row-gap: 5vh;
+  }
+
+  body #proyectos .rowone .proy1 .proy1vid .proy1circle{
+    margin-top: 3vh;
+    height: 18vh;
+    width: 40vw;
+  }
+
+  body #proyectos .rowone .proy1 .proy1vid .proy1circle video{
+    height: 45vw;
+    width: 70vw;
+    position: absolute;
+    right: -15vw;
+    top: -3vw;
+  }
+
+  body #proyectos .rowone .proy1 .proy1desc .proy1title{
+    height: 2.5vh;
+    width: 30vw;
+  }
+
+  body #proyectos .rowone .proy1 .proy1desc .proy1text{
+    height: 18vh;
+    width: 40vw;
+  }
+
+  body #proyectos .rowone .proy1 .proy1desc .proy1text p{
+    margin-top: 1vh;
+    font-size: 3vw;
+  }
+
+
+
+  body #proyectos .rowone .proy2 .proy2vid .proy2circle{
+    margin-top: 3vh;
+    height: 18vh;
+    width: 40vw;
+  }
+
+  body #proyectos .rowone .proy2 .proy2vid .proy2circle video{
+    height: 45vw;
+    width: 70vw;
+    position: absolute;
+    right: -5vw;
+    top: -3vw;
+  }
+
+  body #proyectos .rowone .proy2 .proy2desc .proy2title{
+    height: 2.5vh;
+    width: 30vw;
+  }
+
+  body #proyectos .rowone .proy2 .proy2desc .proy2text{
+    height: 18vh;
+    width: 40vw;
+    font-size: 5vw;
+  }
+
+  body #proyectos .rowone .proy2 .proy2desc .proy2text p{
+    margin-top: 1vh;
+    font-size: 3vw;
+  }
+
+  body #proyectos .rowtwo .ghub .rowtwo2 .button{
+    width: 50vw;
+    height: 5vh;
+  }
+
+  body #proyectos .rowtwo .ghub .rowtwo2 .button img{
+    width: 6vw;
+    height: auto;
+  }
+
+  body #proyectos .rowtwo .ghub .rowtwo2 .button #link{
+    font-size: 4vw;
+    margin-right: 0.3vw;
+  }
+
+  body #proyectos .rowtwo .ghub .rowtwo1 h2{
+    font-size: 5vw;
+  }
+
+  body #proyectos .rowtwo .ghub .rowtwo2 #flechain {
+    width: 6vw;
+    margin-top: 1.5vh;
+  }
+
+
+  body #experiencia .rowzero{
+    flex-wrap: nowrap;
+    column-gap: 0;
+    row-gap: 0;
+  }
+  body #experiencia .rowzero .titulob #burbujatitle{
+    width: 75vw;
+
+  }
+
+  body #experiencia .rowzero .titulob .titulo{
+    font-size: 9vw;
+    margin-top: 2.5vh;
+    margin-left: 1vw;
+  }
+    
+  body #experiencia .rowzero .logo .contenedor{
+    margin-top: 0.7vh;
+      width: 16vw;
+      height: 7vh;
+  }
+
+  body #experiencia .rowzero .logo #emoteexp{
+    width: 10vw;
+    height: 5vh;
+    margin-left: 1.5vw;
+    margin-top: 0.5vh;
+
+  }
+
+  body #experiencia .rowone{
+    flex-direction: column;
+    row-gap: 0vh;
+  }
+
+  body #experiencia .rowone .tabla td{
+    height: 9vh;
+  }
+
+  body #experiencia .rowone .tabla td{
+    background-position-y: -5vh;
+  }
+
+  body #experiencia a{
+    font-size: 2.8vw;
+  }
+  
+  body #experiencia .rowone .proy2 .proy2desc .maincontainer {
+    height: 20vh;
+    margin-left: 3vw;
+  
+  }
+
+  body #experiencia #flechain {
+    width: 5vw;
+    position: absolute;
+    bottom: -35vh;
+    right: -46vw;
+    z-index: 5;
+  }
+
+  body #experiencia .circle1{
+    margin-top: 1vh;
+  }
+  body #experiencia .circle2{
+    margin-top: 1vh;
+  }
+  body #experiencia .circle3{
+    margin-top: 1vh;
+  }
+  body #experiencia .circle4{
+    margin-top: 1vh;
+  }
+
+  body #sobremi {
+    row-gap: 7vh;
+    padding-top: 50px;
+  }
+
+  body #contacto .rowzero{
+    flex-wrap: nowrap;
+    column-gap: 0;
+    row-gap: 0;
+  }
+  body #contacto .rowzero .titulob #burbujatitle{
+    width: 75vw;
+
+  }
+
+  body #contacto .rowzero .titulob .titulo{
+    font-size: 13vw;
+    margin-top: 1vh;
+    margin-left: 3vw;
+  }
+    
+  body #contacto .rowzero .logo .contenedor{
+    margin-top: 0.7vh;
+    width: 16vw;
+    height: 7vh;
+  }
+
+  body #contacto .rowzero .logo #emotecontact{
+    width: 10vw;
+    height: 5vh;
+    margin-left: 1.5vw;
+
+  }
+
+  body #contacto .rowone{
+    flex-direction: column;
+    row-gap: 1.5vh;
+  }
+
+  body #contacto .rowone .button1 {
+    padding:3vh;
+  }
+
+  body #contacto .rowone .button2 {
+    padding:3vh;
+  }
+
+  body #contacto .rowone .button3 {
+    padding:3vh;
+  }
+
+  body #contacto .rowone .button4 {
+    padding:3vh;
+  }
+
+
+  body #contacto .rowone .button2 #linkig{
+    font-size: 6vw;
+    margin-left: 5vw;
+  }
+
+  body #contacto .rowone .button2 img{
+    margin-top: -1.5vh;
+    width: 7vw;
+  }
+
+  body #contacto .rowone .button1 #linkghub{
+    font-size: 6vw;
+    margin-left: 5vw;
+  }
+
+  body #contacto .rowone .button1 img{
+    margin-top: -1.5vh;
+    width: 7vw;
+  }
+
+  body #contacto .rowone .button3 #linkml{
+    font-size: 6vw;
+    margin-left: 5vw;
+  }
+
+  body #contacto .rowone .button3 img{
+    margin-top: -1.5vh;
+    width: 7vw;
+  }
+
+  body #contacto .rowone .button4 #linkdisc{
+    font-size: 6vw;
+    margin-left: 5vw;
+  }
+
+  body #contacto .rowone .button4 img{
+    margin-top: -1.5vh;
+    width: 7vw;
+  }
+
+  body #contacto .rowtwo{
+    flex-direction: column;
+
+  }
+
+  body #contacto .rowtwo .mapa .mapacontainer iframe{
+    width: 90vw;
+    height: 30vh;
+    
+  }
+
+  body #contacto .rowtwo .form button{
+    background-color: #06283D;
+    color: #fff;
+    font-weight: 600;
+    width: 15vw;
+    height: 4vh;
+  
+  }
+
+
+  
+  
+
+
+
+
+  
+
+
+
+
+
+  
+  
+
+}
+
+img, video {
+  width: 100%;
+  height: auto;
+}
+  
+@media (min-width: 640px) { body {font-size:1rem;} }
+@media (min-width:960px) { body {font-size:1.2rem;} }
+@media (min-width:1100px) { body {font-size:1.5rem;} }
+
+body{
+  background-color: #000000;
+}
+
+
+nav {
+  position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+  height: 100px;
+	padding: 0 5%;
+  background-color: rgba(37, 109, 133,0.2);
+
+  
+}
+
+nav .logo{
+  float: left;
+  top: 10%;
+  width: auto;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  margin-top: 0.5%;
+}
+
+nav .nav-items{
+  float: right;
+  display:flex;
+	padding: 0;
+	margin: 0;
+  width: 60%;
+  height: 100%;
+	align-items: center;
+  justify-content: space-around;
+  
+}
+.nav-items a:hover {
+  color: #DFF6FF;
+  text-shadow: 2px 2px #256D85 ;
+}
+#nav-check{
+  position: absolute;
+  top:-100px;
+}
+.nav-items a{
+  display: block;
+	padding: 1em;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+
+}
+nav li {
+	list-style: none;
+}
+nav .rayas {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+nav .rayas .line {
+	width: 30px;
+	height: 5px;
+	background-color: #fff;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+@media screen and (max-width: 768px){
+  
+  nav .nav-items{
+    float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(0,0,0,.8);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+  }
+  nav .nav-items{
+    z-index: 10;
+  }
+
+  nav .logo{
+    float: none;
+    margin-top: 3%;
+    flex-basis: auto;
+    flex: 1;
+    justify-content: center;
+  }
+
+  nav .rayas{
+    display: block;
+  }
+  nav :checked ~ .nav-items{
+    bottom:0;
+  }
+  
+  .nav-items a:hover {
+    color: #DFF6FF;
+    text-shadow: 2px 2px #256D85 ;
+  }
+
+  nav :checked ~ .rayas .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+  nav :checked ~ .rayas .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  nav :checked ~ .rayas .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+  }
+
+
+}
+
+/*Comienza seccion de inicio responsive*/
+#inicio{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 6.5rem;
+}
+
+#inicio .rowzero{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  font-size: 1.5vw;
+}
+
+#inicio .rowone{
+  display: flex;
+  width: 100%;
+  column-gap: 10vw;
+
+}
+
+#inicio .rowone .logo{
+  flex: 1;
+  flex-basis: auto;
+  margin-left: 1vw;
+}
+
+#inicio .rowone .rectangulo{
+  flex: 1;
+  flex-basis: auto;
+}
+
+#inicio .rowtwo{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#inicio .rowtwo .imagen{
+  flex: 1;
+  
+}
+
+/*Guias*/
+/*
+#inicio div{
+    background: #eee;
+    border: 5px solid #ccc;
+    padding: 10px;
+}
+
+#inicio p{
+  color: #000000;
+}
+*/
+#inicio .txtcircle{
+  border-radius: 50%;
+  padding: 10px;
+  background: rgb(223, 246, 255,0.3);
+}
+
+#inicio .rectangulo{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 80%;
+  justify-content:end;
+  align-items: center;
+  margin-right: 1vw;
+  column-gap: 1vw;
+}
+
+#inicio .rectangulo .rectangle{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 40vw;
+  height: 25vh;
+  background-color: #06283D;
+  box-shadow: 0.4rem 0.7rem #47B5FF;
+}
+
+#inicio .rectangulo .rectangle p{
+  width: 90%;
+  text-align: center;
+}
+
+#inicio .rectangulo .rectanglesmall{
+  width: 7vw;
+  height: 20vh;
+  background-color: #06283D;
+  box-shadow: 0.4rem 0.7rem #47B5FF;
+}
+
+#inicio .rectangulo .rectanglesmall #flechain{
+  margin-top: 1vw;
+  width: 7.5vw;
+  height: auto;
+}
+
+#inicio .rowtwo .waves{
+  height: 14vw;
+  width: 100%;
+
+}
+
+/*Seccion de Sobre mi CSS */
+/*Guias
+#sobremi div{
+    background: #eee;
+    border: 5px solid #ccc;
+    padding: 10px;
+}
+
+#sobremi p{
+  color: #000000;
+}
+*/
+#sobremi{
+  padding-top: 55px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#sobremi .rowzero{
+  display: flex;
+  width: 100%;
+}
+
+#sobremi .rowzero .logo{
+  flex: 1;
+  flex-basis: auto;
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+
+#sobremi .rowzero .logo .contenedor{
+  border-radius: 50%;
+  padding: 10px;
+  width: 8vw;
+  height: 8vw;
+  background: rgb(223, 246, 255,0.3);
+  position: relative;
+}
+
+#sobremi .rowzero .logo .contenedor img{
+  width: 5vw;
+  height: 5vw;
+  position: absolute;
+  left: 1.5vw;
+  top: 1.2vw;
+}
+
+#sobremi .rowzero .titulob{
+  flex: 1;
+  flex-basis: auto;
+  position: relative;
+}
+
+#sobremi .bubble1{
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+#sobremi .bubble2{
+  display: flex;
+  justify-content:left;
+  width: 100%;
+}
+#sobremi .bubble3{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+#sobremi .rowzero .titulob #burbujatitle{
+  z-index: 1;
+  width: 30vw;
+  opacity: 30%;
+}
+
+#sobremi .rowzero .titulob .titulo{
+  z-index: 3;
+  font-size: 3vw;
+  position: absolute;
+  top: -5%;
+  left: 15%;
+}
+
+#sobremi .bubble1 #burbuja1{
+  z-index: 1;
+  width: 35vw;
+  position: relative;
+}
+
+
+#sobremi .bubble1 .rectangle{
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 31vw;
+  height: 14vh;
+  background-color: transparent;
+  right: 3vw;
+}
+
+
+#sobremi .bubble1 .rectangle p{
+  font-size: 1.4vw;
+  z-index: 3;
+}
+
+
+#sobremi .bubble2 #burbuja2{
+  z-index: 1;
+  width: 35vw;
+  opacity: 30%;
+  position: relative;
+}
+
+#sobremi .bubble2 .rectangle{
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 31vw;
+  height: 14vh;
+  background-color: transparent;
+  left: 4vw;
+}
+
+
+#sobremi .bubble2 .rectangle p{
+  font-size: 1.4vw;
+  z-index: 3;
+}
+
+
+
+#sobremi .bubble3 #burbuja3{
+  z-index: 1;
+  width: 35vw;
+}
+
+#sobremi .bubble3 .rectangle{
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 31vw;
+  height: 14vh;
+  background-color: transparent;
+  right: 3vw;
+}
+
+
+#sobremi .bubble3 .rectangle p{
+  font-size: 1.4vw;
+  z-index: 3;
+}
+
+#sobremi .bubble3 .rectangle #flechain{
+  width: 2vw;
+  position: absolute;
+  right: 3vw;
+  z-index: 4;
+  top: 6vw;
+}
+/*Seccion de Proyectos CSS*/
+
+/*Guias
+#proyectos div{
+    background: #eee;
+    border: 5px solid #ccc;
+    padding: 10px;
+}
+
+#proyectos p{
+  color: #000000;
+}
+*/
+
+#proyectos{
+  padding-top: 55px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Definir grid*/
+
+#proyectos .rowzero{
+  display: flex;
+  width: 100%;
+}
+
+#proyectos .rowone{
+  display: flex;
+  width: 100%;
+  column-gap: 1vw;
+}
+
+
+#proyectos .rowtwo{
+  display: flex;
+  width: 100%;
+}
+
+#proyectos .rowzero .logo{
+  flex: 1;
+  flex-basis: auto;
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+
+#proyectos .rowzero .logo .contenedor{
+  border-radius: 50%;
+  padding: 10px;
+  width: 8vw;
+  height: 8vw;
+  background: rgb(223, 246, 255,0.3);
+  position: relative;
+}
+
+#proyectos .rowzero .logo .contenedor img{
+  width: 5vw;
+  height: 5vw;
+  position: absolute;
+  left: 1.5vw;
+  top: 1.2vw;
+}
+
+#proyectos .rowzero .titulob{
+  flex: 1;
+  flex-basis: auto;
+  position: relative;
+}
+
+#proyectos .rowzero .titulob #burbujatitle{
+  z-index: 1;
+  width: 30vw;
+  opacity: 30%;
+}
+
+#proyectos .rowzero .titulob .titulo{
+  z-index: 3;
+  font-size: 3vw;
+  position: absolute;
+  top: -5%;
+  left: 8%;
+}
+
+#proyectos .rowone .proy1{
+  display: flex;
+  flex: 1;
+}
+
+#proyectos .rowone .proy1 .proy1desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  row-gap: 0.5vw;
+  position: relative;
+}
+
+#proyectos .rowone .proy1 .proy1desc .proy1title{
+  background-color:#256D85;
+  border-radius: 35%;
+  width: 70%;
+  height: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-weight: 600;
+}
+
+#proyectos .rowone .proy1 .proy1desc .proy1title p{
+  position: absolute;
+}
+
+#proyectos .rowone .proy1 .proy1desc .proy1text{
+  background-color:#256D85;
+  border-radius: 15%;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+}
+
+#proyectos .rowone .proy1 .proy1desc .proy1text p{
+  font-size: 1.6vw;
+  width: 80%;
+}
+
+#proyectos .rowone .proy1 .proy1vid{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#proyectos .rowone .proy1 .proy1vid .proy1circle{
+  border-radius: 50%;
+  padding: 10px;
+  width: 23vw;
+  background: rgb(223, 246, 255,0.3);
+  position: relative;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+}
+
+#proyectos .rowone .proy1 .proy1vid .proy1circle video{
+  height: 30vw;
+  width: 45vw;
+  position: absolute;
+  right: -10vw;
+  top: -3vw;
+}
+
+
+
+
+#proyectos .rowone .proy2{
+  display: flex;
+  flex: 1;
+}
+
+#proyectos .rowone .proy2 .proy2desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  row-gap: 0.5vw;
+}
+
+
+#proyectos .rowone .proy2 .proy2vid{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  order: 1;
+}
+
+#proyectos .rowone .proy2 .proy2vid .proy2circle{
+  border-radius: 50%;
+  padding: 10px;
+  width: 23vw;
+  background: rgb(223, 246, 255,0.3);
+  position: relative;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+}
+
+#proyectos .rowone .proy2 .proy2vid .proy2circle video{
+  height: 30vw;
+  width: 45vw;
+  position: absolute;
+  right: -2vw;
+  top: -3vw;
+}
+
+#proyectos .rowone .proy2 .proy2desc .proy2title{
+  background-color:#256D85;
+  border-radius: 35%;
+  width: 70%;
+  height: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-weight: 600;
+}
+
+#proyectos .rowone .proy2 .proy2desc .proy2title p{
+  position: absolute;
+}
+
+#proyectos .rowone .proy2 .proy2desc .proy2text{
+  background-color:#256D85;
+  border-radius: 15%;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+}
+
+#proyectos .rowone .proy2 .proy2desc .proy2text p{
+  font-size: 1.6vw;
+  width: 80%;
+}
+
+
+#proyectos .rowtwo .ghub{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+#proyectos .rowtwo .ghub .rowtwo1 h2{
+  display: flex;
+  justify-content: center;
+  font-size: 1.5vw;
+}
+
+#proyectos .rowtwo .ghub .rowtwo2{
+  display: flex;
+  column-gap: 2vw;
+  position: relative;
+
+}
+
+
+#proyectos .rowtwo .ghub .rowtwo2 .button{
+  display: flex;
+  border-radius: 15%;
+  padding: 10px;
+  width: 20vw;
+  height: 4vw;
+  background: rgba(6, 40, 61, 0.5);
+  position: relative;
+}
+
+
+#proyectos .rowtwo .ghub .rowtwo2 .button  #link{
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2vw;
+  margin-top: 0.3vw;
+  font-size: 1.55vw;
+  text-decoration: none;
+}
+
+#proyectos .rowtwo a:hover{
+  color: #DFF6FF;
+  text-shadow: 2px 2px #256D85 ;
+}
+
+#proyectos .rowtwo .ghub .rowtwo2  #flechain{
+  width: 2vw;
+  margin-top: 1.5vw;
+}
+
+#proyectos .rowtwo .ghub .button img{
+  width: 3vw;
+  height: auto;
+  order: 1;
+  margin-right: 2vw;
+}
+
+/*Inicio CSS Mi experiencia */
+#experiencia{
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*
+#experiencia div{
+    background: #eee;
+    border: 5px solid #ccc;
+    padding: 10px;
+}
+
+#experiencia p{
+  color: #000000;
+}
+*/
+
+/*Definir grid*/
+
+#experiencia .rowzero{
+  display: flex;
+  width: 100%;
+}
+
+#experiencia .rowone{
+  display: flex;
+  width: 100%;
+  column-gap: 1vw;
+}
+
+
+#experiencia .rowzero .logo{
+  flex: 1;
+  flex-basis: auto;
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+
+#experiencia .rowzero .logo .contenedor{
+  border-radius: 50%;
+  padding: 10px;
+  width: 8vw;
+  height: 8vw;
+  background: rgb(223, 246, 255,0.3);
+  position: relative;
+}
+
+#experiencia .rowzero .logo .contenedor img{
+  width: 5vw;
+  height: 5vw;
+  position: absolute;
+  left: 1.5vw;
+  top: 1.2vw;
+}
+
+#experiencia .rowzero .titulob{
+  flex: 1;
+  flex-basis: auto;
+  position: relative;
+}
+
+#experiencia .rowzero .titulob #burbujatitle{
+  z-index: 1;
+  width: 30vw;
+  opacity: 30%;
+}
+
+#experiencia  .rowzero .titulob .titulo{
+  z-index: 3;
+  font-size: 3vw;
+  position: absolute;
+  top: -5%;
+  left: 8%;
+}
+
+
+#experiencia  .rowone .proy1{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-left: 2vw;
+}
+
+#experiencia  .rowone .proy1 .proy1desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  row-gap: 0.5vw;
+  position: relative;
+  flex: 1;
+}
+
+#experiencia .rowone .proy1 .proy1vid{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  flex: 1;
+}
+
+#experiencia .tabla{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0vh 3vh;
+  position: relative;
+  flex: 1;
+}
+
+
+#experiencia .tabla tr{
+  text-align: center;
+  position: relative;
+  flex: 1;
+}
+
+
+#experiencia .tabla td{
+  text-align: center;
+  border: solid black 1px;
+  border-radius: 10px;
+  height: 13vh;
+}
+
+#experiencia .tabla .nasa td{
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/nasa.jpg");
+  background-position-y: -10vh;
+  background-size: cover;
+}
+
+
+#experiencia .tabla .nasa .nasatitle{
+  font-size: 1.3vw;
+}
+
+#experiencia .tabla .solacyt td{
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/robomatrix.PNG");
+  background-position-y: -10vh;
+  background-size: cover;
+}
+
+
+#experiencia .tabla .solacyt .solatitle{
+  font-size: 1.3vw;
+}
+
+#experiencia .tabla .genius td{
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/genius.PNG");
+  background-position-y: -10vh;
+  background-size: cover;
+  position: relative;
+}
+
+#experiencia #flechain{
+  width: 2vw;
+  position: absolute;
+  bottom: -47vh;
+  right: -22vw;
+  z-index: 5;
+}
+
+
+#experiencia .tabla .genius .gentitle{
+  font-size: 1.3vw;
+}
+
+#experiencia a{
+  position: relative;
+  text-decoration: none;
+}
+
+#experiencia a::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.5vh;
+  border-radius: 0.7vh;
+  background-color: #47B5FF;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+#experiencia a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+#experiencia .rowone .proy2{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-right: 2vw;
+}
+
+#experiencia .rowone .proy2 .proy2desc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  row-gap: 0.5vw;
+  order: 1;
+  flex: 1;
+}
+
+
+#experiencia .rowone .proy2 .proy2vid{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  flex: 1;
+}
+
+#experiencia .rowone .proy2 .proy2desc .maincontainer{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  flex: 1;
+  background-color: rgba(223, 246, 255, 0.3);
+  height: 51.7vh;
+  border-radius: 3vw;
+  column-gap: 2vw;
+  position: relative;
+}
+
+#experiencia .rowone .proy2 .proy2desc .maincontainer .col{
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+
+#experiencia .circle1{
+  border-radius: 50%;
+  padding: 10px;
+  background: #47B5FF;
+  margin-top: 14vh;
+}
+
+
+#experiencia .circle2{
+  border-radius: 50%;
+  padding: 10px;
+  background: #256D85;
+  margin-top: 14vh;
+}
+
+#experiencia .circle3{
+  border-radius: 50%;
+  padding: 10px;
+  background: #06283D;
+  margin-top: 14vh;
+}
+
+#experiencia .circle4{
+  border-radius: 50%;
+  padding: 10px;
+  background: #DFF6FF;
+  margin-top: 14vh;
+}
+
+#experiencia h3{
+  text-align: center;
+}
+
+
+/*Inicio CSS Contacto*/
+#contacto{
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*
+#contacto div{
+    background: #eee;
+    border: 5px solid #ccc;
+    padding: 10px;
+}
+
+#contacto p{
+  color: #000000;
+}
+
+*/
+/*Definir grid*/
+
+#contacto .rowzero{
+  display: flex;
+  width: 100%;
+}
+
+#contacto .rowzero .logo{
+  flex: 1;
+  flex-basis: auto;
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+
+#contacto .rowzero .logo .contenedor{
+  border-radius: 50%;
+  padding: 10px;
+  width: 8vw;
+  height: 8vw;
+  background: rgb(223, 246, 255,0.3);
+  position: relative;
+}
+
+#contacto .rowzero .logo .contenedor img{
+  width: 5vw;
+  height: 5vw;
+  position: absolute;
+  left: 1.5vw;
+  top: 1.2vw;
+}
+
+#contacto .rowzero .titulob{
+  flex: 1;
+  flex-basis: auto;
+  position: relative;
+}
+
+#contacto .rowzero .titulob #burbujatitle{
+  z-index: 1;
+  width: 30vw;
+  opacity: 30%;
+}
+
+#contacto  .rowzero .titulob .titulo{
+  z-index: 3;
+  font-size: 3vw;
+  position: absolute;
+  top: -5%;
+  left: 8%;
+}
+
+#contacto .rowone{
+  display: flex;
+  width: 100%;
+  column-gap: 3vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+#contacto .rowone div{
+  flex: 1;
+}
+
+#contacto .rowone a:hover{
+  color: #DFF6FF;
+  text-shadow: 2px 2px #256D85 ;
+}
+
+#contacto .rowone .button1{
+  display: flex;
+  border-radius: 18%;
+  padding: 10px;
+  background: rgba(6, 40, 61, 0.7);
+  position: relative;
+  height: 9vh;
+}
+
+#contacto .rowone .button1 img{
+  width: 3vw;
+  height: auto;
+  order: 1;
+  position: absolute;
+  right: 5%;
+  flex: 1;
+}
+
+#contacto .rowone .button1 a{
+  position: absolute;
+  left: 10%;
+  top: 25%;
+  text-decoration: none;
+  font-size: 1.4vw;
+  
+}
+
+
+#contacto .rowone .button2{
+  display: flex;
+  border-radius: 18%;
+  padding: 10px;
+  background: rgba(6, 40, 61, 0.7);
+  position: relative;
+}
+
+#contacto .rowone .button2 img{
+  width: 3vw;
+  height: auto;
+  order: 1;
+  position: absolute;
+  right: 5%;
+  flex: 1;
+}
+
+#contacto .rowone .button2 a{
+  position: absolute;
+  left: 10%;
+  top: 25%;
+  text-decoration: none;
+  font-size: 1.4vw;
+  
+}
+
+#contacto .rowone .button3{
+  display: flex;
+  border-radius: 18%;
+  padding: 10px;
+  background: rgba(6, 40, 61, 0.7);
+  position: relative;
+}
+
+#contacto .rowone .button3 img{
+  width: 3vw;
+  height: auto;
+  order: 1;
+  position: absolute;
+  right: 5%;
+  flex: 1;
+}
+
+#contacto .rowone .button3 a{
+  position: absolute;
+  left: 10%;
+  top: 25%;
+  text-decoration: none;
+  font-size: 1.4vw;
+  
+}
+
+#contacto .rowone .button4{
+  display: flex;
+  border-radius: 18%;
+  padding: 10px;
+  background: rgba(6, 40, 61, 0.7);
+  position: relative;
+}
+
+
+
+#contacto .rowone .button4 img{
+  width: 3vw;
+  height: auto;
+  order: 1;
+  position: absolute;
+  right: 5%;
+  flex: 1;
+}
+
+#contacto .rowone .button4 a{
+  position: absolute;
+  left: 10%;
+  top: 25%;
+  text-decoration: none;
+  font-size: 1.4vw;
+  
+}
+
+#contacto .rowtwo{
+  display: flex;
+  width: 100%;
+  column-gap: 3vw;
+  text-align: center;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  
+}
+
+#contacto .rowtwo div{
+  flex: 1;
+  position: relative;
+} 
+
+#contacto .rowtwo .mapa .mapacontainer{
+  flex:1;
+
+}
+
+#contacto .rowtwo .form{
+  justify-content: center;
+  position: relative;
+}
+
+#contacto .rowtwo .formcontainer{
+  width: 100%;
+
+}
+
+#contacto .rowtwo .form input{
+  width: 100%;
+  border: 2px solid #47B5FF;
+  border-radius: 4px;
+  color: #000000;
+}
+
+
+#contacto .rowtwo .form input:focus {
+  background-color: #06283D;
+  color: #fff;
+}
+
+#contacto .rowtwo .form textarea{
+  width: 100%;
+  border: 2px solid #47B5FF;
+  border-radius: 4px;
+  color: #000000;
+}
+
+#contacto .rowtwo .form textarea:focus {
+  background-color: #06283D;
+  color: #fff;
+}
+
+#contacto .rowtwo .form select{
+  width: 100%;
+  border: 2px solid #47B5FF;
+  border-radius: 4px;
+  color: #000000;
+}
+
+#contacto .rowtwo .form option{
+  width: 100%;
+  color: #000000;
+}
+
+#contacto .rowtwo .form button{
+  background-color: #06283D;
+  color: #fff;
+  font-weight: 600;
+  width: 4vw;
+  height: 4vh;
+
+}
+
+#contacto .rowtwo .mapa .mapacontainer iframe{
+  width: 50vw;
+  height: 50vh;
+  
+}
