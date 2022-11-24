@@ -1,0 +1,14 @@
+body .card img{
+    opacity: 100%;
+    height: 35vh;
+    width: auto;
+    align-self: center;
+}
+
+body .card h5{
+    font-size: 1.5vh;
+}
+
+body .card p{
+    font-size: 3vh;
+}
