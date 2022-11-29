@@ -5,10 +5,90 @@ body .card img{
     align-self: center;
 }
 
+body .card
+
 body .card h5{
     font-size: 1.5vh;
 }
 
 body .card p{
-    font-size: 3vh;
+    font-size: 2vh;
 }
+#poketable #bodytablepoke .type td {
+    align-items: center;
+}
+body #poketable .type p{
+    font-size: 1.4vh;
+}
+ .fire{
+    color: orange;
+}
+
+.water{
+    color: cyan;
+}
+
+.normal{
+    color: grey;
+}
+
+ .grass{
+    color: lightgreen;
+}
+
+ .flying{
+    color: azure;
+}
+
+.fighting{
+    color: maroon;
+}
+
+.poison{
+    color: purple;
+}
+
+ .electric{
+    color:yellow;
+}
+
+ .ground{
+    color: brown;
+}
+
+ .rock{
+    color:beige;
+}
+
+ .psychic{
+    color:pink;
+}
+
+ .ice{
+    color: lightskyblue;
+}
+
+ .bug{
+    color: forestgreen;
+}
+
+.ghost{
+    color: darkorchid;
+}
+
+.steel{
+    color: gray;
+}
+
+.dragon{
+    color:cornflowerblue;
+}
+
+.dark{
+    color:black;
+}
+
+ .fairy{
+    color:deeppink;
+}
+

@@ -18,6 +18,7 @@
 
 	<link href="css/app.css" rel="stylesheet">
 	<link href="css/styleimg.css" rel="stylesheet">
+	<link href="css/charts.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -193,30 +194,17 @@
 					</div>
 
 				</div>
-				<div class="row">
+				<div class="row" id="pokedchart1">
 					<div class="col-12 d-flex">
 						<div class="card flex-fill">
 							<div class="card-header">
 								<h5 class="card-title mb-0">Chart#1</h5>
 							</div>
-							<table class="table table-hover my-0" id="poketable">
-								<thead>
-									<tr>
-										<th>#Pókedex</th>
-										<th class="d-none d-xl-table-cell">Nombre</th>
-										<th class="d-none d-xl-table-cell">Tipos</th>
-										<th>Primer Movimiento</th>
-										<th class="d-none d-md-table-cell">Generación</th>
-									</tr>
-								</thead>
-								<tbody id="bodytablepoke">
-									
-									
-								</tbody>
-							</table>
 						</div>
 					</div>
-					
+					<table class="charts-css column" id="pokechart">
+							
+					</table>
 				</div>
 
 			</div>
