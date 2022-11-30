@@ -152,7 +152,7 @@ function generateRequest(id,validation){
   function makeCard(nombre,url)
   {
     let template = `<div class="card animate__animated animate__bounce" id = "containerpokemon1">
-    <img class="card-img-top" id="img-gen1" src="${url}" alt="pokemongenerado">
+    <img class="card-img-top animate__animated animate__jackInTheBox" id="img-gen1" src="${url}" alt="pokemongenerado">
     <div class="card-header">
         <h5 class="card-title mb-0">Tu pokemon es: ${nombre}</h5>
         <h3 class="card-title mb-0">Tipos:</h3>` + padd + `
