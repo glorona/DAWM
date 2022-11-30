@@ -3,15 +3,16 @@ let container2;
 let container3;
 let containerchart1;
 const poketot = 900;
-let numberfetch = 1; //cantidad de requests 
-let errorno = 0; //numero de pokemones con null en la imagen
-let mapatypes;
-let mapagen;
+var numberfetch = 1; //cantidad de requests 
+var errorno = 0; //numero de pokemones con null en la imagen
+var mapatypes;
+var mapagen;
 let arrtipos;
 let genini;
 let classad = '';
 let padd = '';
 let fmove;
+var contador = 0;
 window.onload = init;
 
 function generateNumber(min,max){
@@ -32,6 +33,40 @@ function init(){
 
     containerchart1 = document.getElementById("pokedchart1");
     container3 = document.getElementById("pokechart");
+
+    botonfiltro = document.getElementById("actboton")
+    botonfiltro.addEventListener("click",updateChart)
+}
+
+function updateChart(event_poke){
+    var tag_gen = document.getElementById("gen")
+    var tag_tipo = document.getElementById("tipo")
+
+    var valor_gen = tag_gen.checked;
+    var valor_tipo = tag_tipo.checked;
+    var charCreado = false
+    if(valor_gen){
+        if(charCreado){
+            myChart.update()
+        }
+        else{
+            charCreado = true
+            createChart1(mapagen)
+            
+        }
+        
+    }
+    if(valor_tipo){
+        if(charCreado){
+            myChart.update()
+        }
+        else{
+            charCreado = true
+            createChart1(mapatypes)
+            
+        }
+    }
+
 }
 
 function fillCard(event_poke){
@@ -42,6 +77,19 @@ function fillCard(event_poke){
     mapatypes = new Map();
     generateRequest(generateNumber(1,poketot),false);
 
+}
+
+
+function reiniciaCanvas1(){
+    chartcontainer = document.getElementById("chartcontainer1");
+    let template = `<canvas id="pokechart1" class="animate__animated animate__bounce"></canvas>`
+    chartcontainer.innerHTML = template
+
+}
+function reiniciaCanvas2(){
+    chartcontainer = document.getElementById("chartcontainer2");
+    let template = `<canvas id="pokechart2" class="animate__animated animate__bounce"></canvas>`
+    chartcontainer.innerHTML = template;
 }
 
 function updateNumber(){
@@ -57,7 +105,6 @@ function fillTable(event_pokemany){
     for(let i=0; i<25; i++){
         generateRequest(generateNumber(1,poketot),true);
     }
-    createChart1(mapagen);
 }
 
 function generatep(arrtype){
@@ -78,7 +125,6 @@ function generateRequest(id,validation){
       nombre = nombre.split("-")
       nombre = nombre[0]
       generatep(arrtipos)
-      console.log(padd)
       let url = data.sprites.other.dream_world.front_default;
       if(validation)
       {
@@ -87,12 +133,25 @@ function generateRequest(id,validation){
       else{
         makeCard(nombre,url);
       }
+      contador++;
+      var charcreado2 = false
+      if (contador>=24){
+        if(charcreado2){
+            myChart.update()
+        }
+        else{
+        contador = 0;
+        charcreado2 = true
+        createChart1(mapagen);
+        }
+      }
+      
     });
   }
   
   function makeCard(nombre,url)
   {
-    let template = `<div class="card">
+    let template = `<div class="card animate__animated animate__bounce" id = "containerpokemon1">
     <img class="card-img-top" id="img-gen1" src="${url}" alt="pokemongenerado">
     <div class="card-header">
         <h5 class="card-title mb-0">Tu pokemon es: ${nombre}</h5>
@@ -113,7 +172,7 @@ function generateRequest(id,validation){
   function makeCell(id,nombre,url)
   {
 
-    let template = `<tr>
+    let template = `<tr class="animate__animated animate__fadeInRight">
     <td class="pokedex">${id}</td>
     <td class="d-none d-xl-table-cell name">${nombre}</td>
     <td class="d-flex d-xl-table-cell type ${classad}">` + padd + `</td>
@@ -147,6 +206,18 @@ function generateRequest(id,validation){
         else{
             mapatypes.set(typeind,1);
         }
+        console.log(errorno)
+        var chartCreado = false;
+        if (errorno > 0){
+            if(chartCreado){
+                myChart2.update()
+            }
+            else{
+            chartCreado = true;
+            createChart2(errorno,numberfetch)
+            
+            }
+        }
     }
     //extraeremos generacion por numero de pokedex
     let pokeid = datos.id
@@ -179,7 +250,6 @@ function generateRequest(id,validation){
     }
     
     mapagen.set(genini,mapagen.get(genini)+1)
-    console.log(mapagen)
     //movimiento
     fmove = datos.moves[0].move.name
     fmove = fmove.charAt(0).toUpperCase() + fmove.slice(1);
@@ -189,23 +259,170 @@ function range(start, end) {
     return Array.from({ length: end - start + 1 }, (_, i) => i)
   }
 
-function createChart1(mapa){
-    container3.innerHTML = '';
-    let legendchart = `<ul class="charts-css legend legend-circle>`;
-    let template_row = ``;
-    for(let llave of mapa.keys()){
-        let valor = mapa.get(llave)
-        legendchart+=`<li> ${llave} </li>`
-        template_row+=`<tr> 
-            <td> ${valor} </td> 
-            </tr>`
+function createChart1(mapa,valorbool){
+    reiniciaCanvas1();
+    console.log("Llamando a crear chart!")
+    let keys = Array.from(mapa.keys())
+    let values = Array.from(mapa.values())
+    const ctx = document.getElementById("pokechart1");
+        var myChart = new Chart(ctx, {
+          type: "horizontalBar",
+          data: {
+            labels: keys,
+            datasets: [
+              {
+                
+                data: values,
+                lineTension: 0,
+                backgroundColor: [
+                  'rgba(255, 99, 132, 0.2)',
+                  'rgba(255, 159, 64, 0.2)',
+                  'rgba(255, 205, 86, 0.2)',
+                  'rgba(75, 192, 192, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(153, 102, 255, 0.2)',
+                  'rgba(201, 203, 207, 0.2)',
+                  'rgba(255, 90, 132, 0.2)',
+                  'rgba(255, 159, 64, 0.2)',
+                  'rgba(255, 205, 86, 0.2)'
+                 
+                ],
+                borderColor:  [
+                  'rgb(255, 99, 132)',
+                  'rgb(255, 159, 64)',
+                  'rgb(255, 205, 86)',
+                  'rgb(75, 192, 192)',
+                  'rgb(54, 162, 235)',
+                  'rgb(153, 102, 255)',
+                  'rgb(201, 203, 207)',
+                  'rgb(255, 99, 132)',
+                  'rgb(255, 159, 64)',
+                  'rgb(255, 205, 86)'
+                  
+                ],
+                borderWidth: 2,
+                pointBackgroundColor: "#007bff",
 
-    }
-
-    legendchart+= `</ul>`
-    container3.innerHTML += template_row;
-    
-    
-
-
+              },
+            ],
+          },
+          options: {
+            indexAxis: 'y',
+            scales: {
+              yAxes: [
+                {
+                  ticks: {
+                    beginAtZero: false,
+                  },
+                },
+              ],
+            },
+            legend: {
+              display: false,
+            },
+          },
+        });
 }
+
+function createChart2(errorno,numberfetch){
+    reiniciaCanvas2();
+    console.log("Llamando a crear chart 2!")
+    const ctx = document.getElementById("pokechart2");
+        var myChart2 = new Chart(ctx, {
+            type: "pie",
+            data: {
+                labels: ["Errores","Generaciones correctas"],
+                datasets: [{
+                    data: [errorno,numberfetch],
+                    backgroundColor: [
+                        window.theme.primary,
+                        window.theme.warning,
+                        window.theme.danger
+                    ],
+                    borderWidth: 5
+                }]
+            },
+            options: {
+                responsive: !window.MSInputMethodContext,
+                maintainAspectRatio: false,
+                legend: {
+                    display: true
+                },
+                cutoutPercentage: 75
+            }
+        });
+}
+
+
+/*
+document.addEventListener("DOMContentLoaded", function() {
+    // Pie chart
+    new Chart(document.getElementById("chartjs-dashboard-pie"), {
+        type: "pie",
+        data: {
+            labels: ["Chrome", "Firefox", "IE"],
+            datasets: [{
+                data: [4306, 3801, 1689],
+                backgroundColor: [
+                    window.theme.primary,
+                    window.theme.warning,
+                    window.theme.danger
+                ],
+                borderWidth: 5
+            }]
+        },
+        options: {
+            responsive: !window.MSInputMethodContext,
+            maintainAspectRatio: false,
+            legend: {
+                display: false
+            },
+            cutoutPercentage: 75
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Bar chart
+    new Chart(document.getElementById("chartjs-dashboard-bar"), {
+        type: "bar",
+        data: {
+            labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+            datasets: [{
+                label: "This year",
+                backgroundColor: window.theme.primary,
+                borderColor: window.theme.primary,
+                hoverBackgroundColor: window.theme.primary,
+                hoverBorderColor: window.theme.primary,
+                data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+                barPercentage: .75,
+                categoryPercentage: .5
+            }]
+        },
+        options: {
+            maintainAspectRatio: false,
+            legend: {
+                display: false
+            },
+            scales: {
+                yAxes: [{
+                    gridLines: {
+                        display: false
+                    },
+                    stacked: false,
+                    ticks: {
+                        stepSize: 20
+                    }
+                }],
+                xAxes: [{
+                    stacked: false,
+                    gridLines: {
+                        color: "transparent"
+                    }
+                }]
+            }
+        }
+    });
+});
+
+*/

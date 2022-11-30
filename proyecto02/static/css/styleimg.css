@@ -5,7 +5,17 @@ body .card img{
     align-self: center;
 }
 
-body .card
+body #containerpokemon1{
+    animation: bounce;
+    --animate-delay: 2s;
+    animation-duration: 2s; 
+}
+
+body #bodytablepoke tr{
+    animation: fadeInRight;
+    --animate-delay: 2s;
+    animation-duration: 2s; 
+}
 
 body .card h5{
     font-size: 1.5vh;
