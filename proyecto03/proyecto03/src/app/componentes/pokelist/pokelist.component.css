@@ -1,0 +1,139 @@
+.title{
+    font-size: 20px;
+}
+
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+
+.app-container {
+    height: 90%;
+    margin: 0;
+}  
+.app-sidenav {
+    width: 230px;
+}
+.app-sidenav-content:before {
+    content: "";
+    background-image: url(src/assets/img/pokeball.png);
+    position: absolute;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    top: -5%;
+    left: -15%;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.2;
+  }
+
+
+.app-sidenav-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    margin-top: 5vh;
+} 
+
+
+mat-card {
+    width: 100%;
+    padding-top: 1vh;
+}
+
+.principal{
+    justify-items: center;
+    width: 80%;
+}
+
+.calendar{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    row-gap: 0.5vh;
+    width:80%;
+    border-radius: 2vh;
+    background-color: rgba(255,0,0,0.3);
+    align-items: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.calendar span{
+    margin-top: 1vh;
+    font-size: 4vw;
+    align-items: center;
+    font-weight: 500;
+}
+
+.pokepls{
+    width: 75%;
+    height: 5vh;
+    background-image: url(src/assets/img/fetch.jpg);
+    background-size: 100%;
+    background-position-y: 10vh;
+}
+
+.pokepls p{
+    margin-top: 2vh;
+    color: white;
+    font-weight: 1000;
+    -webkit-text-stroke: 0.2px black;
+    font-size: 3vh;
+}
+
+.result{
+
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    column-gap: 5vw;
+
+    background-image: url(src/assets/img/list.jpg);
+    border-radius: 2vh;
+    padding: 2vh 2vw;
+
+
+}
+
+.container1{
+    padding-top: 1vh;
+    border-radius: 2vh;
+    background-color: rgba(118, 118, 118, 0.5);
+    height: 100%;
+    width: 40vw;
+    padding: 1vh 1vw;
+    margin-left: 2vw;
+}
+
+
+.container2{
+    padding-top: 1vh;
+    height: 100%;
+    border-radius: 2vh;
+    background-color: rgba(118, 118, 118, 0.5);
+    width: 40vw;
+    padding: 1vh 1vw;
+    margin-right: 2vw;
+
+}
+
+.container1 div{
+    padding-top: 1vh;
+}
+
+.container2 div{
+    padding-top: 1vh;
+}
+.pokeres{
+    
+    text-transform: capitalize;
+    height: 25%;
+    width: 100%;
+    font-weight: 500;
+}

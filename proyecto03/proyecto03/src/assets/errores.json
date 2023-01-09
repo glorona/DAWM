@@ -1,0 +1,11 @@
+[
+    {"day":"LUN","fetch":50,"error":10},
+    {"day":"MAR","fetch":50,"error":10},
+    {"day":"MIE","fetch":50,"error":10},
+    {"day":"JUE","fetch":50,"error":10},
+    {"day":"VIE","fetch":50,"error":10},
+    {"day":"SAB","fetch":50,"error":10},
+    {"day":"DOM","fetch":50,"error":10}
+
+
+]

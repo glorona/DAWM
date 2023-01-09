@@ -1,0 +1,144 @@
+.title{
+    font-size: 20px;
+}
+
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+
+.app-container {
+    height: 90%;
+    margin: 0;
+}  
+.app-sidenav {
+    width: 230px;
+}
+.app-sidenav-content:before {
+    content: "";
+    background-image: url(src/assets/img/pokeball.png);
+    position: absolute;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    top: -5%;
+    left: -15%;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.2;
+  }
+
+
+.app-sidenav-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    margin-top: 5vh;
+} 
+
+
+mat-card {
+    width: 85%;
+}
+
+.principal{
+    justify-items: center;
+    width: 80%;
+}
+
+.calendar{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    row-gap: 0.5vh;
+    width:80%;
+    border-radius: 2vh;
+    background-color: rgba(255,0,0,0.3);
+    align-items: center;
+    padding-bottom: 1vh;
+}
+
+.calendar span{
+    margin-top: 1vh;
+    font-size: 4vw;
+    align-items: center;
+    font-weight: 500;
+}
+
+.pokepls{
+    width: 75%;
+    height: 5vh;
+    background-image: url(src/assets/img/fetch.jpg);
+    background-size: 100%;
+    background-position-y: 10vh;
+}
+
+.pokepls p{
+    margin-top: 2vh;
+    color: white;
+    font-weight: 1000;
+    -webkit-text-stroke: 0.2px black;
+    font-size: 3vh;
+}
+
+
+
+
+.resultadopoke{
+    padding-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    row-gap: 0.5vh;
+    width:80%;
+    border-radius: 2vh;
+    align-items: center;
+    padding-bottom: 1vh;
+    background-image: url(src/assets/img/wp1.jpg);
+}
+
+.resultadopoke h3{
+    margin-top: 1vh;
+    font-size: 4vw;
+    align-items: center;
+    font-weight: 500;
+}
+
+.pokename{
+    text-transform: capitalize;
+}
+
+.tipo{
+    text-transform: capitalize;
+}
+
+
+.stats:before {
+    content: "";
+    background-image: url(src/assets/img/wp2.jpg);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: -5%;
+    left: -15%;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.4;
+    border-radius: 2vh;
+}
+
+.stats{
+    position: relative;
+    
+}
+
+#divChart canvas{
+    width: 75vw;
+    height: 50vh;
+}
+

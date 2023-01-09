@@ -1,0 +1,62 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button (click)="sidenav.toggle()" matTooltip="Menu">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span class="title">PokéList</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" routerLink="/dashboard">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+    </button>
+    
+</mat-toolbar>
+
+<mat-sidenav-container class="app-container">
+    <mat-sidenav #sidenav mode="over" [class.mat-elevation-z4]="true" class="app-sidenav">
+        <mat-nav-list>
+            <mat-list-item routerLink="/dashboard">
+                <mat-icon>dashboard</mat-icon><span>Dashboard</span>
+            </mat-list-item>
+            <mat-list-item routerLink="/fetch">
+                <mat-icon>grade</mat-icon><span>PokéFetch</span>
+            </mat-list-item>
+            <mat-list-item routerLink="/list">
+                <mat-icon>drag_indicator</mat-icon><span>PokéList</span>
+            </mat-list-item>
+            <mat-list-item routerLink="/day" color="primary">
+                <mat-icon>hourglass_empty</mat-icon><span>PokeDay</span>
+            </mat-list-item>
+
+            
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet>
+            <div class="app-sidenav-content">
+                <div class="principal">
+                    <h1>PokéList</h1>
+                    <h3>Obtén varios pokemón aleatorios:</h3>
+                </div>
+                <div class="calendar">
+                    <span>Pulsa aquí para una lista de 25 pokemón!</span>
+                    <button mat-raised-button class="pokepls" (click)="obtenerAleatorios(pokemonRes)"><p>Muchos Pokepls</p></button>
+                    
+                </div>
+
+                <div class="result" *ngIf="arreglo1.length > 0">
+                    <div class="container1">
+                        <div class="col1" *ngFor="let pokemon of arreglo1">
+                            <button mat-raised-button color="primary" class="pokeres" routerLink="/fetch/{{pokemon.name}}">#{{pokemon.id}} {{pokemon.name}}</button>
+
+                        </div>
+                    </div>
+                    <div class="container2">
+                        <div class="col2" *ngFor="let pokemon of arreglo2">
+                            <button mat-raised-button color="primary" class="pokeres" routerLink="/fetch/{{pokemon.name}}">#{{pokemon.id}} {{pokemon.name}}</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container> 

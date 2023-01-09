@@ -1,0 +1,155 @@
+.title{
+    font-size: 20px;
+}
+
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+
+.app-container {
+    height: 90%;
+    margin: 0;
+}  
+.app-sidenav {
+    width: 230px;
+}
+
+.app-sidenav-content:before {
+    content: "";
+    background-image: url(src/assets/img/pokeball.png);
+    position: absolute;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    top: -5%;
+    left: -15%;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.2;
+  }
+
+
+.app-sidenav-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    margin-top: 5vh;
+} 
+
+
+
+.principal{
+    justify-items: center;
+    width: 80%;
+}
+
+.calendar{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    row-gap: 0.5vh;
+    width:80%;
+    border-radius: 5vh;
+    background-color: rgba(255,0,0,0.5);
+    align-items: center;
+}
+
+.calendar span{
+    margin-top: 1vh;
+    font-size: 4.8vw;
+    align-items: center;
+}
+
+.calendar .error{
+    padding: 1vh 1vh;
+    background-color: rgba(255,255,255,1);
+    border-radius: 5vh;
+    width: 100%;
+
+}
+
+.calendar .errorhighlight{
+    padding: 0.4vh 0.3vh;
+    background-color: rgba(255,255,255,1);
+    border-width: 0.3vh;
+    border-style: solid;
+    border-color: black;
+    border-radius: 4vh;
+    width: 100%;
+}
+
+mat-card {
+    width: 85%;
+}
+
+mat-icon{
+    position: absolute;
+    right:7%;
+    margin-right: 0%;
+}
+
+.pokefetch{
+    position:relative;
+    height: 50%;
+    opacity: 1;
+    z-index: 1;
+}
+
+.pokefetch::before{
+    background-image: url(src/assets/img/wp1.jpg);
+    content: "";
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: .3;
+}
+
+.pokelist{
+    position:relative;
+    height: 50%;
+    opacity: 1;
+    z-index: 1;
+}
+
+.pokelist::before{
+    background-image: url(src/assets/img/wp2.jpg);
+    content: "";
+    position: absolute;
+    background-size: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: .3;
+}
+
+
+.pokeday{
+    position:relative;
+    height: 50%;
+    opacity: 1;
+    z-index: 1;
+}
+
+.pokeday::before{
+    background-image: url(src/assets/img/wp3.webp);
+    content: "";
+    position: absolute;
+    background-size: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: .3;
+}
