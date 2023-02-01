@@ -31,14 +31,15 @@ export class PokefetchComponent {
   
   
   ngAfterViewInit() {
-    console.log(this.chartRef)
-    let context = this.chartRef.nativeElement;
+    
     const {name} = this.route.snapshot.params;
 
-    if(name != ""){
+    if(name !== undefined){
+      console.log("condicion")
+      console.log(name)
       this.obtenerDatos(name,this.resourceservice)
 
-
+      let context = this.chartRef.nativeElement;
       this.myChart = new Chart(context, {
         type: 'radar', //this denotes tha type of chart
   
@@ -79,7 +80,7 @@ export class PokefetchComponent {
 
     const {name} = this.route.snapshot.params;
     
-    if(name != ""){
+    if(name !== undefined){
       
       this.obtenerDatos(name,this.resourceservice)
     }
